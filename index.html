@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Bem vindo ao meu site! </h1>
-        <p>Este é um projeto de: Natan Costa</p>
-        <h2>Estou aprendendo a criar páginas web.</h2>
+    <header class="container">
+        <span>Natan Costa</span>
 
-    <a href="https://github.com/NatN21/projeto-html" target="_blank">Visite o repositório no Github</a>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-projeto">Sobre o Projeto</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#diario-notas">Diario de Notas</a></li>
+            </ul>
+        </nav>
+        <span>Projeto - HTML</span>
 
-    <section class="entrada">
-        <h3>Primeiro dia aprendendo HTML e CSS</h3>
-        <p class="data">21 de dezembro de 2025</p>
+    </header>
+    <main>
+        <section class="sobre-projeto">
+            <h1>Sobre o Projeto</h1>
+            <p>
+                Esse projeto é um espaço que criei para reunir meus aprendizados em programação Web. Fiz tudo sozinho, desde o HTML e CSS, e logo mais vou adicionar JavaScript. É um jeito de colocar em prática o que estudo e testar minhas habilidades.
+            </p>
+            <p>
+                No site, por enquanto, compartilho algumas notas sobre diferentes temas, mas a ideia é ir evoluindo conforme aprendo mais. Estou animado para ver como tudo isso vai se transformar ao longo do tempo!
+            </p>
+        </section>
+        <section class="github">
+            <p class="github-texto">
+                Este projeto é um repositório no github. <br>Acesse!
+            </p>
+            <a href="https://github.com/NatN21/projeto-html" target="_blank" class="botao">Github</a>
+        </section>
+        <article class="sobre-mim" id="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <p>
+                Meu nome é Natan Costa e esse é um site desenvolvido por mim. <br>Sou um estudante do Ensino Médio que ao memso tempo cursa TI. Atualmente eu me encontro no segundo ano do Médio. Tenho tentado nesses últimos tempos melhorar meu aprendizado, nisso eu percebi que não bastava apenas fazer as aulas, era necessário praticar para aprender. E aqui estou eu.
+            </p>
+        </article>
+    </main>
+    <section aria-label="Diario de Notas" class="diario" id="diario-notas">
+        <h2>Diário de Notas</h2>
+        <div class="nota">
+            <h3 class="nota-titulo">Primeiro dia aprendendo HTML e CSS</h3>
+            <p class="nota-data">21 de dezembro de 2025</p>
 
-        <p>
-            Hoje é meu aniversário, eu faço 16 anos,
-            e decidi iniciar meu projeto de um site pessoal.
-            Bem, eu to aprendendo agora e daqui a pouco vou comemorar este dia C:
-        </p>
+            <p class="nota-texto">
+                Hoje é meu aniversário, eu faço 16 anos,
+                e decidi iniciar meu projeto de um site pessoal.
+                Bem, eu tô aprendendo agora e daqui a pouco vou comemorar este dia C:
+                <br><br>
+                Ainda é tudo bem simples, mas já estou animado em ver
+                meu site tomando forma aos poucos.
+            </p>
+        </div>
+        <div class="nota">
+            <h3 class="nota-titulo">Primeira atualização do projeto</h3>
+            <p class="nota-data">22 de fevereiro de 2026</p>
 
-        <p>
-            Ainda é tudo bem simples, mas já estou animado em ver
-            meu site tomando forma aos poucos.
-        </p>
+            <p class="nota-texto">
+                É, demorou um pouquinho, mas enfim atualizei esse site. Ao longo das semnas que se passram eu estudei mais sobre html e css, e depois de me sentir seguro o bastante decidi mexer aqui novamente.
+                <br><br>
+                Da última vez confesso que usei inteligencia artificial para ir construindo o site (sem código pronto), mas dessa vez fiz o site em dois dias 100% sozinho. Legal né? também acho. Ainda creio que tem muito mais pra melhorar, então vamos ver como isso prossegue.
+            </p>
+        </div>
     </section>
-    
+    <footer>
+        <p>Natan Costa - Não sei que direitos reservar.</p>
+    </footer>
 </body>
+
 </html>

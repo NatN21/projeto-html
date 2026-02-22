@@ -1,56 +1,160 @@
 body {
-    padding: 40px;
-    background-color: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
-.barra-superior{
-    background-color: #555;
-    max-height: 40px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom-right-radius: 10px;
-}
-
-h1{
-    margin-bottom: 10px;
-    font-size: 32px;
-    color: #222;
-}
-h2{
-    margin-top: 0;
-    font-size: 18px;
-    color: #555;
-    font-weight: normal;
-}
-a {
-    display: inline-block;
-    margin-top: 40px;
-    text-decoration: none;
-    color: #f4f4f4;
-    background-color: #0077cc;
-    padding: 10px 16px;
-    border-radius: 6px;
-}
-.container{
-    max-width: 600px;
-    background-color: white;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 10px;
-}
-.entrada{
-    margin-top: 30px;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-    line-height: 1.6;
-}
-.entrada h3{
-    margin-bottom: 5px;
-}
-.data{
-    font-size: 14px;
-    color: #888;
-    margin-top: 0;
+/*CSS Reset e parametros*/
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
 }
 
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
 
+main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 0px 40px;
+}
+/*header*/
+
+header {
+  display: flex;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: rgba(255, 157, 0, 0.608);
+}
+span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: -4px;
+}
+
+header a {
+  text-decoration: none;
+  color: #292929;
+  display: block;
+  height: 50px;
+  align-content: center;
+}
+header a:hover{
+    text-decoration: underline;
+}
+/*Sobre o projeto*/
+
+.sobre-projeto {
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+.sobre-projeto h1 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding: 0;
+}
+.sobre-projeto p {
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+/*Sobre mim*/
+
+.sobre-mim {
+  background: #ebebeb;
+  padding: 20px;
+  border-radius: 20px;
+  grid-column: 1 /2;
+}
+.sobre-mim h2 {
+  margin-bottom: 10px;
+}
+.sobre-mim p {
+  font-size: 1.4rem;
+  list-style: 2;
+  margin-bottom: 10px;
+}
+/*Github popup*/
+
+.github {
+  background: #ebebeb;
+  border-radius: 30px;
+  padding: 20px;
+  max-height: 250px;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 100px;
+}
+.botao {
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 255, 0.348);
+  color: #fff;
+  border-radius: 22px;
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  font-size: medium;
+}
+.botao:hover{
+  background-color: rgba(0, 0, 255, 0.46);
+    
+}
+/*Diario de notas*/
+.diario {
+  background-color: rgba(255, 157, 0, 0.519);
+  
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 10px 40px;
+}
+.diario h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+  text-align: right;
+}
+
+.nota {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 3px solid rgb(255, 106, 0);
+  padding: 15px;
+  color: #292929;
+  margin: 20px 0px 20px 40px;
+  grid-column: 2;
+}
+.nota-titulo {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.nota-data{
+    font-size: 0.95rem;
+    color: #808080;
+    margin-bottom: 15px;
+}
+.nota-texto{
+ font-size: 1.3rem;
+ max-width: 50ch;
+}
+/*Rodapé*/
+footer{
+    font-size: 1.1rem;
+    height: 60px;
+    text-align: center;
+    align-content: center;
+}
+footer p{
+    display: block;
+}
