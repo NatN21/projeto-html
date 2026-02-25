@@ -14,10 +14,11 @@ ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  display: flex;
-  gap: 60px;
   text-transform: uppercase;
   font-size: 0.9rem;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 main {
@@ -25,6 +26,7 @@ main {
   display: grid;
   grid-template-columns: 4fr 1fr;
   padding: 0px 40px;
+  max-width: 1074px;
 }
 /*header*/
 
@@ -34,23 +36,27 @@ header {
   justify-content: space-between;
   padding: 40px;
   background-color: rgba(255, 157, 0, 0.608);
+  flex-wrap: wrap;
 }
 span {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: -4px;
+  min-width: 166px;
+}
+nav{
+  align-content: center;
 }
 
 header a {
   text-decoration: none;
   color: #292929;
   display: block;
-  height: 50px;
   align-content: center;
 }
 header a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 /*Sobre o projeto*/
 
@@ -108,7 +114,7 @@ header a:hover{
 }
 .botao:hover{
   background-color: rgba(0, 0, 255, 0.46);
-    
+  
 }
 /*Diario de notas*/
 .diario {
@@ -136,8 +142,8 @@ header a:hover{
   grid-column: 2;
 }
 .nota-titulo {
-    font-weight: bold;
-    font-size: 1.6rem;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 .nota-data{
     font-size: 0.95rem;
@@ -150,11 +156,11 @@ header a:hover{
 }
 /*Rodapé*/
 footer{
-    font-size: 1.1rem;
-    height: 60px;
-    text-align: center;
-    align-content: center;
+  font-size: 1.1rem;
+  height: 60px;
+  text-align: center;
+  align-content: center;
 }
 footer p{
-    display: block;
+  display: block;
 }

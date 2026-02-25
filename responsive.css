@@ -1,0 +1,44 @@
+@media (max-width: 1000px){
+    ul{
+        gap: 30px;
+    }
+}
+@media (max-width: 850px){
+  header a{
+    background-color: beige;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0.8px solid orange;
+  }  
+  ul{
+        gap: 15px;
+    }
+}
+@media (max-width: 700px){
+  .github{
+    display: none;
+  }
+  .sobre-projeto h1{
+    grid-column: 1 / 2;
+  }
+}@media (max-width: 550px){
+  main{
+    grid-template-columns: 1fr;
+  }
+  .sobre-projeto h1{
+    grid-column: 1 / 2;
+  }
+  .diario{
+    grid-template-columns: 1fr;
+  }
+  .diario h2{
+    line-height: 1.23;
+  }
+  .nota{
+    grid-column: 1;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+}
